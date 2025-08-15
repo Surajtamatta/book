@@ -36,7 +36,7 @@ const Navbar = () => {
       > 
         <div className="w-full h-12 flex font-poppins justify-between items-center ">
   
-          <div className={`
+          <Link href={'/'} className={`
           w-1/2 relative z-50 flex justify-start  gap-5 font-poppins font-medium
          sm:justify-end
           `}>
@@ -44,7 +44,7 @@ const Navbar = () => {
             relative
             right-10  sm:left-24
             `}/>
-          </div>
+          </Link>
 
          
           
