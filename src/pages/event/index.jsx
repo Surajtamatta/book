@@ -30,7 +30,7 @@ const events = [
     {
     date: "October 20ᵗʰ, 2025",
     title: "The Ripped Bodice",
-    location: "Brooklyn,NY",
+    location: "Brooklyn, NY",
     titleimg: "/revolvetitle.png",
     link: "https://www.therippedbodice.com/brooklyn-events",
   },
