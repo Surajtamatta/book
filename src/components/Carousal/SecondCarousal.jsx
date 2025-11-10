@@ -87,7 +87,7 @@ const SecondCarousel = ({ data }) => {
                       READ NOW
                     </button>
                     </Link>
-                    <Link href={book.goodreads}>
+                    {book.goodreads && <Link href={book.goodreads}>
                     <button
                       style={{ backgroundColor: lightColor }}
                       className="max-sm:text-base text-gray-800  hover:opacity-80 font-normal font-poppins py-2 px-4 sm:px-6 rounded-md hover:shadow-inner shadow hover:text-gray-100 transition duration-300 ease-in-out"
@@ -95,7 +95,7 @@ const SecondCarousel = ({ data }) => {
                     >
                       ADD TO GOODREADS
                     </button>
-                    </Link>
+                    </Link>}
                    
                   </div>
                  </div>
