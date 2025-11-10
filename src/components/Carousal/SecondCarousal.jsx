@@ -14,7 +14,9 @@ const lightenColor = (color, percent) => {
 };
 
 const SecondCarousel = ({ data }) => {
-
+  const filteredData = data.filter(
+  (book) => typeof book.description === "string" && book.description.trim() !== ""
+);
   const [menuOpen, setMenuOpen] = useState(false);
   const { openModal } = useModal();
 
@@ -29,12 +31,14 @@ const SecondCarousel = ({ data }) => {
 
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
-  const backgroundColor = data[currentSlideIndex]?.bgColor || ""
+  const backgroundColor = filteredData[currentSlideIndex]?.bgColor || ""
   const lightColor = lightenColor(backgroundColor, 0.5);
 
   const handleNext = () => {
-      setCurrentSlideIndex((currentSlideIndex + 1) % data.length);  
+      setCurrentSlideIndex((currentSlideIndex + 1) % filteredData.length);  
   };
+
+
   return (
     <section
       id="#books"
@@ -46,7 +50,8 @@ const SecondCarousel = ({ data }) => {
       }}
     >
       <div className="carousel w-full flex justify-center items-center relative">
-        {data.map((book, index) => (
+        {filteredData
+        .map((book, index) => (
           <div
             key={index}
             className={`carousel-slide1 ${index === currentSlideIndex ? 'active' : ''} w-full flex flex-col items-center text-center sm:text-left sm:flex-row`}

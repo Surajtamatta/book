@@ -31,7 +31,7 @@ export const booksdata = [
       bookcover:'/spiralbook.png',
       imgSrc: "/spiralcover.jpg",
       bgColor:'#c87faa',
-      isavailable:'COMING JAN 28, 2025',
+      isavailable:'OUT NOW!',
       releaseDate: "January, 2025",
       read: "https://www.penguinrandomhouse.com/books/761858/spiral-by-bal-khabra/9780593818282/ ",
       goodreads: "https://www.goodreads.com/book/show/199246937-spiral",
@@ -55,7 +55,7 @@ export const booksdata = [
       bookcover:'/revolvebook.png',
       imgSrc: "/revolvecover.jpg",
       bgColor:'#96A3DE',
-      isavailable:'COMING OCT 14, 2025',
+      isavailable:'OUT NOW!',
       releaseDate: "October, 2025",
       read: "https://www.penguinrandomhouse.com/books/761859/revolve-by-bal-khabra/ ",
       goodreads: "https://www.goodreads.com/book/isbn/9780593818305",
@@ -71,6 +71,17 @@ export const booksdata = [
       <p>Olympian skater Sierra Romanova is determined to reclaim her the spotlight after an accident left her battling panic attacks. Enter Dylan Donovan, a cocky hockey player whose NHL dreams are slipping away after being kicked off his team. Desperate to stay on the rink, Dylan turns to figure skating—and to Sierra. </p>
       <p>When she needs a new pairs partner, she's only got one option and it just so happens to be the cocky hockey player she can't stand. She's disciplined, he's a wildcard, but together, they might just be the perfect match.</p>
     `
+    },
+    {
+      id:'03',
+      title: "Embrace",
+      subtitle:'OFF THE ICE #3',
+      bookcover:'/revolvebook.png',
+      imgSrc: "/embracebook.jpeg",
+      bgColor:'#96A3DE',
+      isavailable:'COMING AUGUST 4, 2025',
+      releaseDate: "August, 2025",
+     
     },
     
   ];
