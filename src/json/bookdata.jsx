@@ -82,7 +82,7 @@ export const booksdata = [
     bookcover: '/embracebook.png',
     imgSrc: '/embracecover.jpeg',
     bgColor: '#F7A33E',
-    isavailable: 'COMING AUGUST 4, 2025',
+    isavailable: 'COMING AUGUST 4, 2026',
     releaseDate: 'August, 2025',
     read: 'https://www.penguinrandomhouse.com/books/815798/embrace-by-bal-khabra ',
     // goodreads: "https://www.goodreads.com/book/isbn/9780593818305",

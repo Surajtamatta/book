@@ -1,38 +1,38 @@
-
-
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Image from 'next/image';
-const FirstCarousel = ({ data }) => {
 
+const FirstCarousel = ({ data }) => {
   return (
-    <div className="carousel-container p-2  sm:p-6 w-full max-w-[80%] sm:max-w-[80%] md:max-w-[1100px] left-3 sm:left-5 relative  overflow-hidden">
-      {data.map((book, index) => (
-        <div
-          key={index}
-          className={`carousel-slide active w-1/2 `}
-        >
-          <div className=" flex flex-col text-left items-start max-w-[230px] sm:max-w-[320px] md:max-w-[400px] mx-auto">
-            <h1 className="mb-2 text-black text-xs  font-inters font-medium text-[8px] sm:text-sm">
+    <div className="w-full flex justify-center">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4 p-4 w-full max-w-[1100px]">
+        {data.map((book, index) => (
+          <div
+            key={index}
+            className="flex flex-col text-left items-start"
+          >
+            <h1 className={`mb-2 ${(index === 2 || index === 3) ? "text-white md:text-black" : "text-black"}
+ text-[10px] z-10 sm:text-sm font-medium`}>
               {book.isavailable}
             </h1>
+
             <div className="w-full relative aspect-[1/1.2]">
               <Image
                 src={book.bookcover}
-                alt={`${book.title}`}
-                layout="fill"
-                objectFit="fit"
+                alt={book.title}
+                fill
+                style={{ objectFit: "contain" }}
               />
-
             </div>
-            <h3 className="text-xs sm:text-xl mt-4  sm:mt-5 text-white font-semibold font-markazitext mb-2">
+
+            <h3 className={`text-xs z-10 sm:text-xl mt-2  sm:mt-5 font-semibold font-markazitext mb-2 ${(index === 0 || index === 1) ? "text-black md:text-white" : "text-white "}`}>
               {book.title}
             </h3>
-            <p className="text-xs sm:text-base  font-alkatra font-medium text-white">
+            <p className={`text-xs z-10 sm:text-base  font-alkatra font-medium ${(index === 0 || index === 1) ? "text-black md:text-white" : "text-white "}`}>
               {book.releaseDate}
             </p>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
