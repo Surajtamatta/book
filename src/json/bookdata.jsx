@@ -83,7 +83,7 @@ export const booksdata = [
     imgSrc: '/embracecover.jpeg',
     bgColor: '#F7A33E',
     isavailable: 'COMING AUGUST 4, 2026',
-    releaseDate: 'August, 2025',
+    releaseDate: 'August, 2026',
     read: 'https://www.penguinrandomhouse.com/books/815798/embrace-by-bal-khabra ',
     // goodreads: "https://www.goodreads.com/book/isbn/9780593818305",
     character: 'Kian & Scarlett',

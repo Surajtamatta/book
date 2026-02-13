@@ -15,9 +15,16 @@ const ComingSoon = ({ content }) => {
             {content} Content
           </h2>
           <hr className="border-gray-300 w-[80%]" />
-          <p className="text-lg md:text-2xl text-gray-500 text-center">
-            Coming Soon
+          <p className="text-lg  text-gray-500 text-center">
+            “Your Valentine’s Bonus is Ready”
           </p>
+          <a
+            href="/valentine-bonus.pdf"
+            download
+            className="z-10 text-pink font-semibold text-2xl group underline hover:text-fuchsia-600 transition"
+          >
+            <span className="text-fuchsia-600 group-hover:text-pink ">OTI</span> Valentine’s Day Bonus
+          </a>
         </div>
       </div>
     </div>

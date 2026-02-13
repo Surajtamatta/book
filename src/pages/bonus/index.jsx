@@ -3,7 +3,11 @@ import React from 'react'
 
 const Bonuses = () => {
   return (
-    <ComingSoon content ={"Bonus"}/>
+    <ComingSoon 
+      title ={"Bonus Content"}
+    content ={"Bonus"}
+
+    />
   )
 }
 
